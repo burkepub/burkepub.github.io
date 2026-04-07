@@ -508,7 +508,7 @@ footer a:hover {
 
 .post-header {
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--card-bg);
     border-radius: 8px;
 }
