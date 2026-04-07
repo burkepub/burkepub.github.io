@@ -245,12 +245,20 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    align-items: stretch;
+}
+
+.post-grid .post-link {
+    display: flex;
+    height: 100%;
 }
 
 .post-grid .post {
     padding: 1rem;
     background-color: var(--card-bg);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .post-grid .post h3 {
@@ -263,6 +271,7 @@ h2 {
 .post-grid .post p {
     font-size: 0.875rem;
     color: var(--text-secondary);
+    margin-top: auto;
 }
 
 .view-all {
