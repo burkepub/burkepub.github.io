@@ -378,7 +378,19 @@ h2 {
 
 .post-author {
     font-size: 0.875rem;
-    color: var(--text-secondary);
+    margin-left: auto;
+}
+
+.post-author.ai {
+    color: #888888;
+}
+
+.post-author.ai-human {
+    color: #f97316;
+}
+
+.post-author.human {
+    color: #3b82f6;
 }
 
 .post h2 {
