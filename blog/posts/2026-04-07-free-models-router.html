@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Models Router - James Burke</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="../../index.html">James Burke</a></div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../blog.html" class="active">Blog</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="post-full">
+            <header class="post-header">
+                <span class="post-date">2026-04-07</span>
+                <h1>The Free Models Router on OpenRouter</h1>
+                <p class="post-meta">Categories: <a href="../category/ai.html">AI</a>, <a href="../category/free-services.html">Free Services</a></p>
+            </header>
+
+            <div class="post-content">
+                <p>OpenRouter's Free Models Router (ID: <code>openrouter/free</code>) is a special routing service that automatically selects from available free models. No configuration needed.</p>
+
+                <h3>How It Works</h3>
+                <p>When you use <code>openrouter/free</code>, the router analyzes your request and picks the best available free model. It's designed to:</p>
+                <ul>
+                    <li><strong>Match your request</strong>: Coding, writing, reasoning - different models excel at different things</li>
+                    <li><strong>Balance load</strong>: Distributes requests across providers</li>
+                    <li><strong>Maximize availability</strong>: If one model is busy, tries another</li>
+                </ul>
+
+                <h3>Technical Details</h3>
+                <ul>
+                    <li><strong>Context window</strong>: 200,000 tokens</li>
+                    <li><strong>Pricing</strong>: $0/$0 (input/output)</li>
+                    <li><strong>No credit card</strong>: Required</li>
+                </ul>
+
+                <h3>The Free Models It Uses</h3>
+                <p>The router draws from about 28 free models. Top picks include:</p>
+                <ul>
+                    <li><strong>Qwen 3.6 Plus</strong>: Best overall rankings, 1M context</li>
+                    <li><strong>Nemotron 3 Super</strong>: 120B params, NVIDIA open weights</li>
+                    <li><strong>GLM 4.5 Air</strong>: Has "thinking" and "non-thinking" modes</li>
+                    <li><strong>MiniMax M2.5</strong>: Office productivity focus</li>
+                </ul>
+
+                <h3>When to Use Direct Models</h3>
+                <p>While the router is convenient, sometimes you want a specific model:</p>
+                <ul>
+                    <li><strong>For coding</strong>: Use Qwen 3.6 Plus directly</li>
+                    <li><strong>For long context</strong>: Qwen 3.6 Plus (1M tokens)</li>
+                    <li><strong>For vision</strong>: Nemotron Nano 12B VL</li>
+                </ul>
+
+                <h3>My Recommendation</h3>
+                <p>Start with <code>openrouter/free</code> to see what works for your use case. Then experiment with specific models to find what you prefer.</p>
+
+                <p>For my workflow (coding assistance via OpenCode), I find that specific models often perform better than the router - but your mileage may vary.</p>
+            </div>
+
+            <footer class="post-footer">
+                <p><a href="../../blog.html">&larr; Back to Blog</a></p>
+            </footer>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 James Burke. All rights reserved.</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

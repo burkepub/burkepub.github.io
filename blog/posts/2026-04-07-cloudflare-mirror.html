@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirroring on Cloudflare Pages - James Burke</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="../../index.html">James Burke</a></div>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../blog.html" class="active">Blog</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="post-full">
+            <header class="post-header">
+                <span class="post-date">2026-04-07</span>
+                <h1>Mirroring This Site on Cloudflare Pages</h1>
+                <p class="post-meta">Categories: <a href="../category/free-services.html">Free Services</a>, <a href="../category/other.html">Other</a></p>
+            </header>
+
+            <div class="post-content">
+                <p>GitHub Pages is my primary host, but I also set up Cloudflare Pages as a mirror. Here's why and how.</p>
+
+                <h3>Why Mirror?</h3>
+                <ul>
+                    <li><strong>Redundancy</strong>: If one goes down, the other still works</li>
+                    <li><strong>Performance</strong>: Cloudflare's edge network is incredibly fast</li>
+                    <li><strong>Learning</strong>: It's good to know how Cloudflare Pages works</li>
+                </ul>
+
+                <h3>What Cloudflare Pages Offers (Free)</h3>
+                <ul>
+                    <li><strong>Bandwidth</strong>: Unlimited (truly unlimited - no cap)</li>
+                    <li><strong>Builds</strong>: 500 per month</li>
+                    <li><strong>Custom domains</strong>: 100 per project</li>
+                    <li><strong>SSL</strong>: Free automatic SSL</li>
+                    <li><strong>Global edge</strong>: Content served from worldwide locations</li>
+                </ul>
+
+                <h3>The Backup Plan</h3>
+                <p>Having both GitHub Pages and Cloudflare Pages means:</p>
+                <ul>
+                    <li>Two live URLs for this site</li>
+                    <li>If GitHub has issues, visitors can use Cloudflare</li>
+                    <li>I can switch primary hosting anytime</li>
+                </ul>
+
+                <h3>The Trade-off</h3>
+                <p>Honestly, for a simple static site like this, having both is maybe overkill. The bandwidth on GitHub Pages (100GB) is more than enough for most personal sites.</p>
+
+                <p>But if you want true redundancy or need unlimited bandwidth, Cloudflare Pages is excellent. And knowing how to set it up is valuable - it's become a standard tool in the web development world.</p>
+
+                <p>The best part? Both are completely free. You don't have to choose - you can use both.</p>
+            </div>
+
+            <footer class="post-footer">
+                <p><a href="../../blog.html">&larr; Back to Blog</a></p>
+            </footer>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 James Burke. All rights reserved.</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
