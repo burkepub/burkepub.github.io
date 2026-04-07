@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Reference - James Burke</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        .style-ref { max-width: 100%; padding: 2rem; }
+        .style-ref h1 { margin-bottom: 2rem; }
+        .style-section { margin-bottom: 3rem; }
+        .style-section h2 { font-size: 1.25rem; margin-bottom: 1rem; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
+        .style-item { margin-bottom: 1.5rem; padding: 1rem; background: #f5f5f5; border-radius: 6px; }
+        .style-item h3 { font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600; }
+        .style-item code { display: block; background: #e5e5e5; padding: 0.25rem 0.5rem; border-radius: 3px; font-size: 0.875rem; margin-bottom: 0.5rem; }
+        .style-item p { font-size: 0.875rem; color: #666; }
+        
+        /* Dark mode variants */
+        @media (prefers-color-scheme: dark) {
+            .style-item { background: #1a1a1a; }
+            .style-item h2 { border-color: #333; }
+            .style-item code { background: #262626; }
+            .style-item p { color: #a3a3a3; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">James Burke</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="tech.html">Tech</a></li>
+                <li><a href="style-reference.html" class="active">Styles</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="style-ref">
+        <h1>Style Reference</h1>
+        <p>CSS classes and HTML patterns used in this site.</p>
+
+        <div class="style-section">
+            <h2>Colors</h2>
+            <div class="style-item">
+                <h3>CSS Variables</h3>
+                <code>--bg-color --text-color --text-secondary --link-color --link-hover --border-color --nav-bg --card-bg --footer-bg</code>
+                <p>Used for theming. Light: white/#1a1a/#666/#2563eb/#e5e5e5. Dark: #0f0f0f/#e5e5e5/#a3a3a3/#60a5fa.</p>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Typography</h2>
+            <div class="style-item">
+                <h3>h1</h3>
+                <code>&lt;h1&gt;</code>
+                <p>2.5rem, font-weight 700</p>
+            </div>
+            <div class="style-item">
+                <h3>h2</h3>
+                <code>&lt;h2&gt;</code>
+                <p>1.5rem, font-weight 600, border-bottom</p>
+            </div>
+            <div class="style-item">
+                <h3>h3</h3>
+                <code>&lt;h3&gt;</code>
+                <p>1.25rem, margin 0.5rem 0</p>
+            </div>
+            <div class="style-item">
+                <h3>p (body)</h3>
+                <code>&lt;p&gt;</code>
+                <p>1rem, line-height 1.6</p>
+            </div>
+            <div class="style-item">
+                <h3>p (secondary/text)</h3>
+                <code>color: var(--text-secondary)</code>
+                <p>Gray text, used for descriptions</p>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Cards & Sections</h2>
+            <div class="style-item">
+                <h3>.post</h3>
+                <code>&lt;article class="post"&gt;</code>
+                <p>padding 1.5rem, background var(--card-bg), border-radius 8px</p>
+            </div>
+            <div class="style-item">
+                <h3>.post-featured</h3>
+                <code>&lt;article class="post post-featured"&gt;</code>
+                <p>Full-width card, padding 2rem</p>
+            </div>
+            <div class="style-item">
+                <h3>.about</h3>
+                <code>&lt;section class="about"&gt;</code>
+                <p>Card with padding and background</p>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Links</h2>
+            <div class="style-item">
+                <h3>Post link (clickable card)</h3>
+                <code>&lt;a class="post-link"&gt;&lt;article class="post"&gt;...&lt;/article&gt;&lt;/a&gt;</code>
+                <p>Full card is clickable, hover effect with transform</p>
+            </div>
+            <div class="style-item">
+                <h3>Social links</h3>
+                <code>&lt;ul class="social-links"&gt;&lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code>
+                <p>Flexbox, gap 1rem, button-like styling</p>
+            </div>
+            <div class="style-item">
+                <h3>Category list</h3>
+                <code>&lt;ul class="category-list"&gt;&lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code>
+                <p>Flexbox, pill-shaped items</p>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Nav</h2>
+            <div class="style-item">
+                <h3>Navigation</h3>
+                <code>&lt;nav&gt;...&lt;/nav&gt;</code>
+                <p>max-width 800px, flex, sticky top</p>
+            </div>
+            <div class="style-item">
+                <h3>Nav links</h3>
+                <code>&lt;ul class="nav-links"&gt;</code>
+                <p>Flexbox, gap 1.5rem</p>
+            </div>
+            <div class="style-item">
+                <h3>Theme toggle</h3>
+                <code>&lt;button id="theme-toggle" class="theme-btn"&gt;</code>
+                <p>Toggle button with emoji</p>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Grids</h2>
+            <div class="style-item">
+                <h3>.post-grid</h3>
+                <code>&lt;div class="post-grid"&gt;</code>
+                <p>grid-template-columns: repeat(3, 1fr), gap 1rem</p>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>Buttons & Interactive</h2>
+            <div class="style-item">
+                <h3>.theme-btn</h3>
+                <code>&lt;button class="theme-btn"&gt;</code>
+                <p>Border, border-radius 6px, cursor pointer</p>
+            </div>
+            <div class="style-item">
+                <h3>.social-links a</h3>
+                <code>&lt;a class="social-links"&gt;</code>
+                <p>Inline-block, padding, border, hover effect</p>
+            </div>
+        </div>
+
+        <div class="style-section">
+            <h2>HTML Patterns</h2>
+            <div class="style-item">
+                <h3>Standard page</h3>
+                <code>&lt;header&gt;&lt;nav&gt;...&lt;/nav&gt;&lt;/header&gt;&lt;main&gt;...&lt;/main&gt;&lt;footer&gt;...&lt;/footer&gt;</code>
+            </div>
+            <div class="style-item">
+                <h3>Blog post card</h3>
+                <code>&lt;a href="blog/posts/..." class="post-link"&gt;&lt;article class="post"&gt;&lt;span class="post-date"&gt;...&lt;/span&gt;&lt;h2&gt;Title&lt;/h2&gt;&lt;p&gt;Description&lt;/p&gt;&lt;/article&gt;&lt;/a&gt;</code>
+            </div>
+            <div class="style-item">
+                <h3>Full blog post</h3>
+                <code>&lt;article class="post-full"&gt;&lt;header class="post-header"&gt;...&lt;/header&gt;&lt;div class="post-content"&gt;...&lt;/div&gt;&lt;footer class="post-footer"&gt;...&lt;/footer&gt;&lt;/article&gt;</code>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 James Burke. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

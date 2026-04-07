@@ -284,6 +284,41 @@ h2 {
     margin-top: 2rem;
 }
 
+.tech-header {
+    margin-bottom: 2rem;
+}
+
+.tech-header p {
+    color: var(--text-secondary);
+    font-size: 1.0625rem;
+}
+
+.style-ref-link {
+    margin-top: 1rem;
+}
+
+.style-ref-link a {
+    font-weight: 500;
+}
+
+.tech-section {
+    margin-bottom: 2.5rem;
+}
+
+.tech-section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech-link {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
 .social-links {
     list-style: none;
     display: flex;
