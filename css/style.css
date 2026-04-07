@@ -261,6 +261,11 @@ h2 {
     flex-direction: column;
 }
 
+.post-grid .post .post-date,
+.post-grid .post .post-author {
+    display: inline;
+}
+
 .post-grid .post h3 {
     font-size: 1rem;
     margin: 0.5rem 0;
@@ -365,15 +370,13 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-.post-date {
+.post-date, .post-author {
     display: inline;
     font-size: 0.875rem;
     color: var(--text-secondary);
 }
 
 .post-author {
-    display: inline;
-    font-size: 0.875rem;
     margin-left: 0.5rem;
 }
 
