@@ -372,14 +372,13 @@ h2 {
 
 .post-date-line {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
 .post-author {
     font-size: 0.875rem;
-    margin-left: auto;
+    margin-left: 1rem;
 }
 
 .post-author.ai {
