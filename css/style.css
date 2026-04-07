@@ -374,6 +374,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .post-author {
@@ -507,6 +508,9 @@ footer a:hover {
 
 .post-header {
     margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border-radius: 8px;
 }
 
 .post-header h1 {
