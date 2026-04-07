@@ -424,16 +424,24 @@ footer {
 
 footer p {
     color: var(--text-secondary);
-    font-size: 0.875rem;
+    font-size: 0.75rem;
 }
 
 footer a {
     color: var(--text-secondary);
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 footer a:hover {
     color: var(--link-hover);
+}
+
+.footer-icon {
+    width: 0.875em;
+    height: 0.875em;
 }
 
 .footer-sep {
