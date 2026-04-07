@@ -425,6 +425,29 @@ footer {
 footer p {
     color: var(--text-secondary);
     font-size: 0.875rem;
+    margin: 0;
+}
+
+.footer-links {
+    margin-top: 0.75rem !important;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0 0.75rem;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--link-hover);
+}
+
+.footer-icon {
+    width: 1.1em;
+    height: 1.1em;
 }
 
 @media (max-width: 600px) {
