@@ -259,11 +259,13 @@ h2 {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .post-grid .post .post-date,
 .post-grid .post .post-author {
     display: inline;
+    vertical-align: top;
 }
 
 .post-grid .post h3 {
