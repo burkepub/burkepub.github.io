@@ -366,19 +366,21 @@ h2 {
 }
 
 .post-date {
+    display: inline;
     font-size: 0.875rem;
     color: var(--text-secondary);
+}
+
+.post-author {
+    display: inline;
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
 }
 
 .post-date-line {
     display: flex;
     align-items: center;
     width: 100%;
-}
-
-.post-author {
-    font-size: 0.875rem;
-    margin-left: 1rem;
 }
 
 .post-author.ai {
