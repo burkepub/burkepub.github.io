@@ -249,7 +249,7 @@ h2 {
 }
 
 .post-grid .post-link {
-    display: flex;
+    display: block;
     height: 100%;
 }
 
@@ -257,15 +257,6 @@ h2 {
     padding: 1rem;
     background-color: var(--card-bg);
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.post-grid .post .post-date,
-.post-grid .post .post-author {
-    display: inline;
-    vertical-align: top;
 }
 
 .post-grid .post h3 {
@@ -278,7 +269,6 @@ h2 {
 .post-grid .post p {
     font-size: 0.875rem;
     color: var(--text-secondary);
-    margin-top: auto;
 }
 
 .view-all {
