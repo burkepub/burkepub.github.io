@@ -444,6 +444,11 @@ footer a:hover {
     height: 0.875em;
 }
 
+.footer-icon-x {
+    width: 0.875em;
+    height: 0.875em;
+}
+
 .footer-sep {
     margin: 0 0.5rem;
     color: var(--border-color);
